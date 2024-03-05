@@ -10,8 +10,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>day03-css</title>
+    <style>
+        .px {
+            background-color: #000;
+            width: 100px;
+            height: 1px;
+            transform: scale(0.5);
+        }
+        .up {
+            width: 0;
+            height: 0;
+            border: 100px solid transparent;
+            border-top: 100px solid red;
+        }
+        .down{
+            width:0;
+            height:0;
+            border: 100px solid transparent;
+            border-bottom: 100px solid blue;/*蓝色*/
+        }
+        .left{
+            width:0;
+            height:0;
+            border: 100px solid transparent;
+            border-left: 100px solid pink;/*黑色*/
+        }
+        .right{
+            width:0;
+            height:0;
+            border: 100px solid transparent;
+            border-right: 100px solid pink;/*黄色*/
+        }
+    </style>
 </head>
 <body>
-    
+    <!-- 0.5px线 -->
+    <div class="px"></div>
+    <!-- 画三角形 -->
+    <div class="up"></div>
+    <div class="down"></div>
+    <div class="left"></div>
+    <div class="right"></div>
 </body>
 </html>
