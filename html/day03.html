@@ -1,0 +1,48 @@
+<!--
+ * @Author: hayyot
+ * @Date: 2024-03-05 08:10:54
+ * @Description: 铁沸物
+ * @FilePath: \front_end_base\html\day03.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day03-html</title>
+</head>
+<body>
+    <!-- 语义化标签 -->
+    <header>这是header</header>
+    <nav>这是nav</nav>
+    <article>这是article</article>
+    <section>这是section</section>
+    <aside>这是aside</aside>
+    <footer>这是footer</footer>
+    <!-- video -->
+    <video 
+        controls 
+        muted 
+        loop 
+        width="300"
+    >
+        <source 
+            src="https://www.w3schools.com/html/mov_bbb.mp4" 
+            type="video/webm" 
+        />
+    </video>
+    <!-- audio -->
+    <audio id=”media” src=”http://www.abc.com/test.mp3″ controls></audio>
+    <!-- canvas -->
+    <canvas id="canvas" style="border: 1px solid #000;" height="600" width="700">
+        你的浏览器不支持canvas,快去升级浏览器吧!
+    </canvas>
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        ctx.moveTo(200, 300) // 起点为(200，300)
+        ctx.lineTo(500, 300)
+        ctx.stroke();
+    </script>
+</body>
+</html>
